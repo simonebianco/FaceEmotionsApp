@@ -2,7 +2,6 @@ streamlit
 pandas
 tensorflow
 numpy
-cv2
 matplotlib
 sklearn
 opencv-python-headless

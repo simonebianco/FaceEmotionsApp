@@ -42,7 +42,6 @@ oauthlib==3.2.2
 opencv-python-headless==4.5.3.56
 opencv-contrib-python==4.6.0.66
 opencv-python==4.5.4.58
-libgl1
 opt-einsum==3.3.0
 pandas==2.0.1
 Pillow==9.5.0

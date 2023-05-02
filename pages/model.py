@@ -39,7 +39,7 @@ if action == 'Classification Report':
 
 if action == 'Confusion Matrix':
     st.subheader('**Confusion Matrix**')
-    st.image('utils\confusion_matrix.png', width=800)
+    st.image('confusion_matrix.png', width=800)
 
 if action == 'Loss and Learning Rate':
     st.subheader('**Loss and Learning Rate**')

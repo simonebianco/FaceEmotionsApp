@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 
 # Classification Report
-class_report = pd.read_csv('utils\classification_report.csv')
+class_report = pd.read_csv('classification_report.csv')
 class_report.rename(columns={"Unnamed: 0": "features"}, inplace=True)
 # History
-train_history = pd.read_csv('utils\history.csv')
+train_history = pd.read_csv('history.csv')
 train_history.rename(columns={"Unnamed: 0": "Epochs"}, inplace=True)
 
 
@@ -27,11 +27,11 @@ action = st.selectbox("Choose One", actions)
 
 if action == 'Model Architecture':
     st.subheader('**Model Architecture**')
-    st.image('utils\model_architecture.png', width=700)
+    st.image('model_architecture.png', width=700)
 
 if action == 'Train and Test Accuracy':
     st.subheader('**Train and Test Accuracy**')
-    st.image('utils\loss_accuracy.png', width=800)
+    st.image('loss_accuracy.png', width=800)
 
 if action == 'Classification Report':
     st.subheader('**Classification Report**')
@@ -43,7 +43,7 @@ if action == 'Confusion Matrix':
 
 if action == 'Loss and Learning Rate':
     st.subheader('**Loss and Learning Rate**')
-    st.image('utils\lrs.png', width=700)  
+    st.image('lrs.png', width=700)  
 
 if action == 'Training History':
     st.subheader('**Training History**')
